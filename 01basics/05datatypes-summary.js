@@ -5,50 +5,50 @@
 // PRIMITIVE
 // 7 types : String, Number, Boolean, Null, Undefined, Symbol, BigInt
 
-const myName = "Mansi"
-const score = 100
-const scoreValue = 100.3
+const myName = "Mansi" // String
+const score = 100 // number
+const scoreValue = 100.3 //number
 
-const isLoggedIn = false
-const outsideTemp = null
-let username;
+const isLoggedIn = false // boolean
+const outsideTemp = null // Object
+let username; // undefined
 
-const id = Symbol('123')
-const anotherId = Symbol('123')
+const id = Symbol('123') // symbol
+const anotherId = Symbol('123') // symbol
 
-console.log(id === anotherId);
+console.log(id === anotherId); //false
 
-const bigNumber = 364897089247509n
+const bigNumber = 364897089247509n // bigInt
 
 
 
 // REFERENCE TYPE (Non Primitive)
 // Array, Objects, Functions /* datatype of non-primitive is Functions and function return is Object Function */
 
-const heros = ["shaktiman", "naagraj", "doga"];
+const heros = ["shaktiman", "naagraj", "doga"]; // object
 
 let myObj = {
     name: "Mansi",
     age: 21,
-}
+} // object
 
 const myFunction = function () {
     console.log("Hello World");
-}
+} // function
 
 
-console.log(typeof myName);
-console.log(typeof score);
-console.log(typeof scoreValue);
-console.log(typeof isLoggedIn);
+console.log(typeof myName); //String
+console.log(typeof score); //Number
+console.log(typeof scoreValue); //Number
+console.log(typeof isLoggedIn); //Boolean
 console.log(typeof outsideTemp); // Object
-console.log(typeof username);
-console.log(typeof id);
-console.log(typeof anotherId);
-console.log(typeof bigNumber);
-console.log(typeof heros);
-console.log(typeof myObj);
-console.log(typeof myFunction); // returns function but it's Function Object
+console.log(typeof username); //Undefined
+console.log(typeof id); //Symbol
+console.log(typeof anotherId); //Symbol
+console.log(typeof bigNumber); //BigInt
+console.log(typeof heros); //Object
+console.log(typeof myObj); //Object
+console.log(typeof myFunction); // Function //returns function but it's Function Object
 
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3 //Documentation for typeof
