@@ -61,3 +61,28 @@ console.log(typeof myFunction); // Function //returns function but it's Function
 Because data type will automatically assigned at the time of compilation or code execution.
 whereas...
 In statically typed language, the type of a variable is checked during compile-time */
+
+
+// ****************MEMORY*************//
+
+// Stack (Primitive) , Heap (Non-Primitive)
+
+let myTwittername = "butwhymansi"
+
+let anotherName = myTwittername
+anotherName = "Mansi"
+
+console.log(myTwittername);
+console.log(anotherName);
+
+let userOne = {
+    email: "mansi@google.com",
+    upiId: "mansi@ybl.com"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "user@yahoo.com"
+
+console.log(userOne);
+console.log(userTwo);
