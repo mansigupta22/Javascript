@@ -56,3 +56,8 @@ console.log(typeof myFunction); // returns function but it's Function Object
 
 
 // Javascript is a DYNAMICALLY Typed Language
+
+/*javascript is dynamicly type language, the type of a variable is checked during run-time
+Because data type will automatically assigned at the time of compilation or code execution.
+whereas...
+In statically typed language, the type of a variable is checked during compile-time */
