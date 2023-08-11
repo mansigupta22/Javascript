@@ -1,4 +1,7 @@
-// array - in square brackets []
+// array - in square brackets [], inside it are elements 
+// array enables storing a collection of multiple items under a single variable name
+// arrays are resizable and can contain a mix of different data types
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 // () - parenthesis
 // {} - braces/curley braces
@@ -37,11 +40,11 @@ console.log(myArr[1]); //arrays are zero indexed
 
 console.log("A", myArr);
 
-const myn1 = myArr.slice(1,3) //returns section of an array
+const myn1 = myArr.slice(1,3) //returns section of an array doen't include the upper range and also it doesn't maniuplate the original array it remains trhe same 
 
 console.log(myn1);
 console.log("B", myArr);
 
-const myn2 = myArr.splice(1,3) 
+const myn2 = myArr.splice(1,3) // returns the whole range of array and manipulate the original array splice out that portion from the original array
 console.log("C", myArr);
 console.log(myn2);
