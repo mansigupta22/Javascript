@@ -59,3 +59,36 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser)); // convert into array // first property is always key and second is value
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // this method asks about the property and gives values in boolean form // we use this property to avoid crash when asking for some value which is not there 
+
+
+// **********destructure***********//
+
+const course = {
+    coursename: "javascript",
+    price: "999",
+    courseInstructor: "Hitesh",
+}
+
+const {courseInstructor} = course
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+
+// ************API's**********// 
+// jab bhi aapko apna kaam kisi aur ke sir daalna hai use kehte hai API's
+
+//  basically how you write values coming from backend 
+// all these values come in JSON
+
+// {
+//     "playerName": "Mansi",
+//     "maxAttempts": 3,
+// }
+
+[
+    {},
+    {},
+    {}
+]
