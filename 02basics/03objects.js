@@ -8,14 +8,18 @@
 
 //  Object Literals 
 // const user = {} // these {} are empty object
-const user1 = {
-    name: "Mansi", // we can define keys and arrays both // here name is also an string we don't write it like that bcz it assumes it to be a string
+
+const mySym = Symbol("key1") 
+
+const user1 = { 
+    name: "Mansi", // we can define keys and values both in objects // here name is also an string we don't write it like that bcz it assumes it to be a string
     "full name": "Mansi Gupta", // we can't access it by dot method, only option we have is to use braces
+    mySym: "mykey1",
     age: 18,
     location: "Delhi",
     isActive: true,
     activeDays: ["monday", "friday"]
 }
 
-// console.log(user1.age); // not a good way of using 
-console.log(user1["full name"]);
+console.log(user1.age); // not a good way of accessing objects refer to line 13 comment for that
+console.log(user1["full name"]); //we have to give fullname as string 
