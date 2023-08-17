@@ -42,7 +42,7 @@ function loginUserMessage(username){
     }
     return `${username} just logged in`
 }
-console.log(loginUserMessage());
+// console.log(loginUserMessage());
 
 function loginUserMessage(username = "m"){
     if(!username){
@@ -50,4 +50,35 @@ function loginUserMessage(username = "m"){
         return
     }
 }
-console.log(loginUserMessage("g"));
+// console.log(loginUserMessage("g"));
+
+function calculateCartPrice(val1, val2, ...num1){ // here ... is rest operator 
+    return num1
+}
+
+// console.log(calculateCartPrice(200, 400, 500, 300))
+
+const user = {
+    course: "html",
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.course} and price is ${anyobject.price}`);
+}
+
+// handleObject(user)
+
+handleObject({
+    username: "css",
+    price: 299
+})
+
+const myNewArray = [200, 3000, 700, 800]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([300,100,400]));
