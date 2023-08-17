@@ -4,7 +4,7 @@ const user = {
     price: 199,
 
     welcomeMessage: function(){
-        console.log(`${this.username}, welcome to website`);
+        // console.log(`${this.username}, welcome to website`);
         // console.log(this); // current context // can access this here in objects
     }
 
@@ -29,12 +29,12 @@ const user = {
 // tea()
 
 
-const tea = () => {
-    let username = "Mansi"
-    console.log(this); //empty parenthesis
-    console.log(this.username) // undefined
-}
-tea()
+// const tea = () => {
+//     let username = "Mansi"
+//     console.log(this); //empty parenthesis
+//     console.log(this.username) // undefined
+// }
+// tea()
 
 // ******arrow function*********//
 
@@ -50,9 +50,9 @@ tea()
 
 // const addTwo = (num1, num2) => (num1 + num2) 
 
-const addTwo = (num1, num2) => ({username: "Mansi"}) // 
-console.log(addTwo(3,4));
+// const addTwo = (num1, num2) => ({username: "Mansi"}) // 
+// console.log(addTwo(3,4));
 
 
-const myArray = [20, 30, 50]
-myArray.forEach(function)
+// const myArray = [20, 30, 50]
+// myArray.forEach(function)
