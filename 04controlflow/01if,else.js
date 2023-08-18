@@ -53,3 +53,20 @@ if ( userLoggedIn && debitCard){
 if(loggedInFromGoogle || loggedInFromEmail){
     console.log("user logged In");
 }
+
+// Nullish Coalescing Operator (??) : null undefined
+// to handle error in a better way we use this 
+
+let val1; 
+// val1 = 5 ?? 10
+// val1 = null ?? 10
+// val1 = undefined ?? 15
+// val1 = null ?? 10 ?? 80
+
+// console.log(val1);
+
+// Terniary Operator
+// condition ? true : false
+
+const iceTeaPrice = 100
+iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80");
