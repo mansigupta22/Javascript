@@ -25,3 +25,7 @@ const emptyObj = {}
 if(Object.keys(emptyObj).length === 0){
     console.log("Object is empty");
 }
+
+// false == 0 is true
+// false == '' is true
+// 0 == '' is also true 
